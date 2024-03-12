@@ -163,39 +163,38 @@ void display(void) {
         glPopMatrix();
     glPopMatrix(); // Pop matrix for fingers
     
-     // Jari-jari
+    // Jari Jempol
     glPushMatrix();
-    glTranslatef(0.28, 0.0, 0.0); // Posisi jari-jari dimulai dari posisi akhir telapak tangan
-
-    // Jari ibu jari
-    glTranslatef(0.2, 0.0, 0.0);
-    glRotatef((GLfloat)thumb1, 0.0, 0.5, 0.8);
-    glTranslatef(-0.1, 0.0, -0.65);
+    glTranslatef(-0.4, 0.0, 0.55);
+    glTranslatef(0.4, 0.0, 0.0);
+    glRotatef((GLfloat)thumb1, -1.0, 0.0, 0.0);
+    glTranslatef(0.23, 0.0, 0.3);
     glPushMatrix();
-    glScalef(0.2, 0.2, 0.2);
+    glScalef(0.25, 0.2, 0.65);
     glutWireCube(1.0);
     glPopMatrix();
 
-        // Tengah
-        glTranslatef(0.4, 0.0, 0.0);
-        glRotatef((GLfloat)thumb2, 0.0, 0.0, 1.0);
-        glTranslatef(-0.1, 0.0, 0.0);
-        glPushMatrix();
-        glScalef(0.4, 0.2, 0.2);
-        glutWireCube(1.0);
-        glPopMatrix();
+    	// Tengah
+		glTranslatef(-0.4, 0.0, 0.48);
+		glRotatef((GLfloat)thumb2, -1.0, 0.0, 0.0);
+		glTranslatef(0.4, 0.0, 0.0);
+		glPushMatrix();
+		glScalef(0.25, 0.2, 0.4);
+		glutWireCube(1.0);
+		glPopMatrix();
 
-        // Ujung
-        glTranslatef(0.2, 0.0, 0.0);
-        glRotatef((GLfloat)thumb3, 0.0, 0.0, 1.0);
-        glTranslatef(0.2, 0.0, 0.0);
-        glPushMatrix();
-        glScalef(0.4, 0.2, 0.2);
-        glutWireCube(1.0);
-        glPopMatrix();
-    glPopMatrix(); // Pop matrix for fingers
-   
-    
+		// Ujung
+		glTranslatef(-0.4, 0.0, 0.28);
+		glRotatef((GLfloat)thumb3, -1.0, 0.0, 0.0);
+		glTranslatef(0.4, 0.0, 0.0);
+		glPushMatrix();
+		glScalef(0.25, 0.2, 0.4);
+		glutWireCube(1.0);
+		glPopMatrix();
+
+	glPopMatrix();
+
+
    
 glPopMatrix();
     glutSwapBuffers();
