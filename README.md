@@ -16,3 +16,12 @@
 
 <h4 align="center">PERHATIKAN FOLDER SAAT MENGUMPULKAN</h4>
 <h4 align="center">FOLDER SESUAI NIM MASING-MASING</h4>
+
+## Contributor
+
+[![][contrib-image]][contrib-link]
+
+<!-- LINKS -->
+
+[contrib-image]: https://contrib.rocks/image?repo=hanyaseorangpelajar/Submission-Praktikum-GKV-B2
+[contrib-link]: https://github.com/hanyaseorangpelajar/Submission-Praktikum-GKV-B2/graphs/contributors
